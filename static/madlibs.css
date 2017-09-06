@@ -22,6 +22,7 @@ form {
 
 label {
     margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .something {
@@ -30,11 +31,16 @@ label {
 
 h3 {
     margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
     margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
     margin-left: 15px;
-
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    margin-left: 50px;
 }

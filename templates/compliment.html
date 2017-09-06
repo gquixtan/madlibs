@@ -5,13 +5,18 @@
   <link rel="stylesheet" type="text/css" href="static/madlibs.css">
 </head>
 <body>
-    <h1>Hi {{ person }}! I think you're {{ compliment }}!</h1>
+    <h1>Hi {{ person }}! </h1>
+    {% if compliments %}
+    <p>I think you're {% for compliment in compliments%}
+        {{ compliment }}
+        {% endfor %}
+    {% endif %}</p>
 
     <form action="/game">
-        Would you like to play a game?
+        <label>Would you like to play a game?</label>
         <input type='radio' name='answer' value='Yes'>Yes
         <input type='radio' name='answer' value='No'>No
-        <br><input type="submit" value="Submit">
+        <br><br><input type="submit" value="Submit">
     </form>
 </body>
 </html>
